@@ -32,3 +32,8 @@
 # print (square)
 # print (cube)
 
+num = int (input ("enter a number"))
+sq_root = num**0.5
+cube_root = num **0.333
+print(sq_root)
+print(cube_root)
