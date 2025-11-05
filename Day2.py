@@ -32,8 +32,15 @@
 # print (square)
 # print (cube)
 
-num = int (input ("enter a number"))
-sq_root = num**0.5
-cube_root = num **0.333
-print(sq_root)
-print(cube_root)
+# num = int (input ("enter a number"))
+# sq_root = num**0.5
+# cube_root = num **0.333
+# print(sq_root)
+# print(cube_root)
+
+p = int (input ("enter the principle amount here"))
+n = int (input ("enter no of years here"))
+r = float (input("enter the rate of interest here"))
+
+simple_interest = (p*n*r)/100
+print(simple_interest)
