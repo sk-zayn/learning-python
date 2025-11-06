@@ -19,6 +19,25 @@
 # print(total)
 
 
+#QUESTION 3
+
+# student1 =int (input("enter the score for studen1 "))
+# student2 = int (input("enter the score for student2 "))
+# student3 = int (input("enter the score for student3 "))
+
+# average = (student1+student2+student3)/3
+
+# print(average)
+
+#QUESTION 4
+# tomato = 40
+# beans = 50
+# quantity_of_tomato = int (input("enter the no of tomato "))
+# quantity_of_beans = int (input ("enter the no of beans "))
+
+# total =((quantity_of_tomato * tomato)+(quantity_of_beans * beans))
+# print(total)
+
 
 
 
