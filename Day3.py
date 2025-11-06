@@ -71,6 +71,14 @@
 # total_amount = simple_interest + p
 # print(total_amount)
 
+#QUESTION7
+# quantity = int (input ("Enter the quantity of the prodct "))
+# rate = int (input ("Enter the rate of the product "))
+
+# total = rate * quantity
+# print(total)
+
+
 
 
 
