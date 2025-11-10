@@ -1,33 +1,38 @@
 
 # QUESTION 1
-# length = int (input ("enter the length of the rectangle"))
-# breadth = int (input ("enter the breadth of the rectangle"))
+# length = float (input ("enter the length of the rectangle "))
+# breadth = float (input ("enter the breadth of the rectangle "))
 
 # area = length*breadth
-# print(area)
+# print(f"area of the rectangle is {area}")
 
 # perimeter = 2*(length+breadth)
-# print(perimeter)
+# print(f"Perimeter of the rectangle is {perimeter}")
+
+    # to write a formated string we use f before the string
+    # print(f"Perimeter of the rectangle is {perimeter}") like this
 
 #QUESTION 2
+
 # pen = 20
 # pencil = 3
 # quantity_of_pens = int (input("enter the no of pens "))
-# quantity_of_pencils = int (input ("enter the no of pencils "))
+# quantity_of_pencils = int (input("enter the no of pencils "))
 
 # total = (quantity_of_pencils*pencil) + (quantity_of_pens * pen) 
-# print(total)
+# print(f"total amount to be paid is {total}")
+
 
 
 #QUESTION 3
 
-# student1 =int (input("enter the score for studen1 "))
+# student1 = int (input("enter the score for studen1 "))
 # student2 = int (input("enter the score for student2 "))
 # student3 = int (input("enter the score for student3 "))
 
 # average = (student1+student2+student3)/3
 
-# print(average)
+# print(f"Average score is {average}")
 
 #QUESTION 4
 # tomato = 40
@@ -35,7 +40,7 @@
 # quantity_of_tomato = int (input("enter the no of tomato "))
 # quantity_of_beans = int (input ("enter the no of beans "))
 
-# total =((quantity_of_tomato * tomato)+(quantity_of_beans * beans))
+# total = ((quantity_of_tomato * tomato)+(quantity_of_beans * beans))
 # print(total)
 
 #QUESTION 5
@@ -49,15 +54,15 @@
 # sub5 = int (input("enter the marks of sub 5 0-25 "))
 # sub6 = int (input("enter the marks of sub 6 0-25 "))
 
-# subjects = sub1+sub2+sub3+sub4+sub5+sub6
+# subjects = sub1+sub2+sub3+sub4+sub5+sub6 
 
 
 # if (sub1<=25) and (sub2<=25) and (sub3<=25) and (sub4<=25) and (sub5<=25) and (sub6<=25) :
 #     percentage = (subjects/maximum_number) * 100
-#     print(subjects)
-#     print(percentage)
+#     print(f"Total marks {subjects}")
+#     print(f"Your percentage is {percentage}")
 # else :
-#      print("please enter the correct number")
+#      print("please enter the correct marks")
 
 
 #QUESTION 6
@@ -71,12 +76,14 @@
 # total_amount = simple_interest + p
 # print(total_amount)
 
-#QUESTION7
+#QUESTION 7
 # quantity = int (input ("Enter the quantity of the prodct "))
 # rate = int (input ("Enter the rate of the product "))
 
 # total = rate * quantity
 # print(total)
+
+
 
 
 
