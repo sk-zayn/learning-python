@@ -26,5 +26,12 @@ name = "zain"
 print(name[::-1])
 print(name[::-2])
 
+str1 = input ("enter your string ")
+reverse = str1[::-1]
 
+if str1 == reverse:
+    print("its a palindrome")
+
+else:
+    print("its not a palindrome")
 
