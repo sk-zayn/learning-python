@@ -12,7 +12,7 @@
 
 # Conditional Statement
 
-#Question 1
+# Question 1
 
 # age = int(input("Enter your age "))
 # if age >= 18 :
@@ -30,7 +30,7 @@
 # else :
 #     print("both are equal")
 
-#Question 3
+# Question 3
 
 # num1 = int(input("enter the number "))
 # num2 = int (input("enter the number "))
@@ -41,7 +41,7 @@
 # else :
 #     print("both are equal")
 
-#Question 4
+# Question 4
 
 # num = int (input("enter number here "))
 # if num > 100 :
@@ -50,14 +50,14 @@
 #     print("your number is less than 100")
 
 
-#Question 5
+# Question 5
 # num = int (input("enter number here "))
 # if num % 2 == 0:
 #     print("It's even")
 # else:
 #     print("It's odd")
 
-#Question 6
+# Question 6
 # num = int (input("enter number here "))
 
 # if num<0 :
@@ -67,7 +67,7 @@
 # else :
 #     print ("its a zero")
     
-#Question 7
+# Question 7
 # num = int (input("enter number here "))
 
 # if num < 100 :
@@ -77,7 +77,7 @@
 # else :
 #     print ("we think alike")
 
-#Question 8
+# Question 8
 
 # max = 80
 # maximum_number = 80*4
