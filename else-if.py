@@ -45,3 +45,26 @@
 #     else :
 #         print("please enter the correct marks")
 
+#Question 4
+# is_authenticated = True
+# is_trusted = True
+
+# if is_trusted:
+#     print("Hi how are you ")
+# elif is_authenticated:
+#     print("What are you doing ")
+# else:
+#     print("Welcome ")
+
+# print("Have a nice day")
+
+
+
+username = input ("enter your username here ")
+if len(username) > 8:
+    print("Please enter atmost 8 character")
+elif len(username) < 6:
+    print("Please enter atlest 6 character ")
+else:
+    print("Accepted")
+
