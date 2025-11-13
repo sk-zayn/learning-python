@@ -68,3 +68,12 @@ elif len(username) < 6:
 else:
     print("Accepted")
 
+# Question 7
+num = int (input("enter number here "))
+
+if num < 100 :
+    print("number is too small")
+elif num > 100 :
+    print ("number is too large")
+else :
+    print ("we think alike")
