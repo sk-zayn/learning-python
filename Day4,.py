@@ -123,8 +123,18 @@
 # else:
 #   print("You are not eligible to get the loan")
 
-has_bad_record = False
-if not has_bad_record :
+# has_bad_record = False
+# if not has_bad_record :
+#   print("eligible ")
+# else:
+#   print("you are not eligible ")
+
+has_salary_slip = True
+has_good_cibil_score = False
+has_itr = True
+has_bad_record = True
+
+if (not has_bad_record) and ((has_good_cibil_score) and (has_itr) or (has_salary_slip)):
   print("eligible ")
-else:
-  print("you are not eligible ")
+else :
+  print("not eligible ")
