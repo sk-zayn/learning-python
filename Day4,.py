@@ -13,7 +13,6 @@
 # Conditional Statement
 
 # Question 1
-
 # age = int(input("Enter your age "))
 # if age >= 18 :
 #     print("you are major")
@@ -31,7 +30,6 @@
 #     print("both are equal")
 
 # Question 3
-
 # num1 = int(input("enter the number "))
 # num2 = int (input("enter the number "))
 # if num1 < num2 :
@@ -42,7 +40,6 @@
 #     print("both are equal")
 
 # Question 4
-
 # num = int (input("enter number here "))
 # if num > 100 :
 #     print(num)
@@ -66,7 +63,7 @@
 #     print ("its a positive number")
 # else :
 #     print ("its a zero")
-    
+
 # Question 7
 # num = int (input("enter number here "))
 
@@ -78,7 +75,6 @@
 #     print ("we think alike")
 
 # Question 8
-
 # max = 80
 # maximum_number = 80*4
 # sub1 = int (input("enter the marks of sub 1 "))
@@ -97,15 +93,13 @@
 # else :
 #     print("please enter the correct marks")
 
-
-age = int (input ("enter your age "))
-if age <= 12:
-    print("you are a child")
-elif age >= 13 and age <= 19:
-    print("you are a child")
-elif age >= 20 and age <= 59:
-    print("you are a child")
-else:
-    print("you are a senior citizen")
-    
-
+# Question 9
+# age = int (input ("enter your age "))
+# if age <= 12:
+#     print("you are a child")
+# elif age >= 13 and age <= 19:
+#     print("you are a child")
+# elif age >= 20 and age <= 59:
+#     print("you are a child")
+# else:
+#     print("you are a senior citizen")

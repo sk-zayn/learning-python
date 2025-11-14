@@ -1,12 +1,12 @@
-#Practice question 1
-# age = int (input ("enter your age "))
+# Practice question 1
+age = int (input ("enter your age "))
 
-# if age >= 60:
-#     print("Senior citizen")
-# elif age >=18 :
-#     print("Adult")
-# else:
-#     print("Minor")
+if age >= 60:
+    print("Senior citizen")
+elif age >= 18 :
+    print("Adult")
+else:
+    print("Minor") 
 
 # Question 2
 # num = int (input("enter number here "))
@@ -60,20 +60,20 @@
 
 
 
-username = input ("enter your username here ")
-if len(username) > 8:
-    print("Please enter atmost 8 character")
-elif len(username) < 6:
-    print("Please enter atlest 6 character ")
-else:
-    print("Accepted")
+# username = input ("enter your username here ")
+# if len(username) > 8:
+#     print("Please enter atmost 8 character")
+# elif len(username) < 6:
+#     print("Please enter atlest 6 character ")
+# else:
+#     print("Accepted")
 
-# Question 7
-num = int (input("enter number here "))
+# # Question 7
+# num = int (input("enter number here "))
 
-if num < 100 :
-    print("number is too small")
-elif num > 100 :
-    print ("number is too large")
-else :
-    print ("we think alike")
+# if num < 100 :
+#     print("number is too small")
+# elif num > 100 :
+#     print ("number is too large")
+# else :
+#     print ("we think alike")
