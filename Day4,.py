@@ -114,11 +114,17 @@
 #   print(f"{num} is not divisible by 4")
 
 
-has_salary_slip = True
-has_good_cibil_score = True
-has_itr = False
+# has_salary_slip = True
+# has_good_cibil_score = True
+# has_itr = False
 
-if has_salary_slip and has_good_cibil_score or has_itr :
-  print("You are eligible to get the loan")
+# if has_salary_slip and has_good_cibil_score or has_itr :
+#   print("You are eligible to get the loan")
+# else:
+#   print("You are not eligible to get the loan")
+
+has_bad_record = False
+if not has_bad_record :
+  print("eligible ")
 else:
-  print("You are not eligible to get the loan")
+  print("you are not eligible ")
