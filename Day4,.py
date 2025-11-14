@@ -103,3 +103,22 @@
 #     print("you are a child")
 # else:
 #     print("you are a senior citizen")
+
+# num = int (input ("Enter your number "))
+# if num % 4 == 0 :
+#   if num % 5 == 0:
+#     print (f"{num} is divisible by 4 and 5")
+#   else :
+#     print(f"{num} is not divisible by 5")
+# else :
+#   print(f"{num} is not divisible by 4")
+
+
+has_salary_slip = True
+has_good_cibil_score = True
+has_itr = False
+
+if has_salary_slip and has_good_cibil_score or has_itr :
+  print("You are eligible to get the loan")
+else:
+  print("You are not eligible to get the loan")
