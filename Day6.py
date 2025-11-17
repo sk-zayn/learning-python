@@ -1,14 +1,14 @@
-# Practice question 1
-age = int (input ("enter your age "))
+# # Practice question 1
+# age = int (input ("enter your age "))
 
-if age >= 60:
-    print("Senior citizen")
-elif age >= 18 :
-    print("Adult")
-else:
-    print("Minor") 
+# if age >= 60:
+#     print("Senior citizen")
+# elif age >= 18 :
+#     print("Adult")
+# else:
+#     print("Minor") 
 
-# Question 2
+# # Question 2
 # num = int (input("enter number here "))
 
 # if num < 0 :
@@ -19,8 +19,7 @@ else:
 #     print ("its a zero")
 
 
-#Question 3
-
+# # Question 3
 # max = 80
 # maximum_number = 80*4
 # sub1 = int (input("enter the marks of sub 1 "))
@@ -45,7 +44,7 @@ else:
 #     else :
 #         print("please enter the correct marks")
 
-#Question 4
+# #Question 4
 # is_authenticated = True
 # is_trusted = True
 

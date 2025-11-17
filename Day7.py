@@ -33,19 +33,19 @@
 
 # Question 13
 
-Gross_salary = int (input ("Enter your salary "))
-if Gross_salary <= 200000 :
-  print("No tax need to be paid ")
+# Gross_salary = int (input ("Enter your salary "))
+# if Gross_salary <= 200000 :
+#   print("No tax need to be paid ")
 
-elif Gross_salary > 200000 and Gross_salary <= 500000:
-  tax_amount = Gross_salary * 10 / 100
-  In_hand_amount = Gross_salary - tax_amount
-  print(f"Tax amount is {tax_amount}")
-  print(f"In hand salary is {In_hand_amount}")
+# elif Gross_salary > 200000 and Gross_salary <= 500000:
+#   tax_amount = Gross_salary * 10 / 100
+#   In_hand_amount = Gross_salary - tax_amount
+#   print(f"Tax amount is {tax_amount}")
+#   print(f"In hand salary is {In_hand_amount}")
 
-else:
-  tax_amount = Gross_salary * 20 / 100
-  In_hand_amount = Gross_salary - tax_amount
-  print(f"Tax amount is {tax_amount}")
-  print(f"In hand salary is {In_hand_amount}")
+# else:
+#   tax_amount = Gross_salary * 20 / 100
+#   In_hand_amount = Gross_salary - tax_amount
+#   print(f"Tax amount is {tax_amount}")
+#   print(f"In hand salary is {In_hand_amount}")
 
