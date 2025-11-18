@@ -54,12 +54,18 @@
 #   sum = sum * i 
 # print(sum)
 
-list = [2, 3, 4, 4, 5]
-sum = 1
+# list = [2, 3, 4, 4, 5]
+# sum = 1
 
-for i in list :
-  sum = sum * i 
-print(sum)
+# for i in list :
+#   sum = sum * i 
+# print(sum)
+
+num = int(input("Enter number here "))
+fact = 1
+for i in range(1, num+1) :
+  fact = fact * i 
+print(fact)
 
 
 
