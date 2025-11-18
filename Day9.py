@@ -32,6 +32,14 @@ for i in list:
     list2.append(i)
 print(list2)
 
+list = [1, 3, 5, 7, 3, 5, 9, 1, 13, 15]
+list2 = []
+
+for i in list:
+  if i not in list2:
+    list2.append(i)
+print(list2)
+
 
 
 
