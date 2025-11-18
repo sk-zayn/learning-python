@@ -5,8 +5,34 @@ else : #in python we can use else of loops also it will run when the condition g
   print("list is over")
 
 
-#Range it takes 3 parameter 1st starting point 2nd ending point 3rd gap between them.
+# Range it takes 3 parameter 1st starting point 2nd ending point 3rd gap between them.
 
 for i in range(1, 51, 2) :# goes from 1 to 50 and leave 1 number in between 1,3,5,7,9...49
   print(i)
+
+list =[]
+for i in range(1, 51, 2) :# goes from 1 to 50 and leave 1 number in between 1,3,5,7,9...49
+  list.append(i) #append adds the new output at the end of the list 
+  print(list)
+
+list1 = ["zain", 19, 12, 20.6, 49.0, "zahid", "parveen"]
+list2 = []
+for i in list1: #iterate on all the index in list and store it in i
+  if type(i) == str : # check the type of the i if its string then the condition is true 
+    list2.append (i) # add it in the list2
+print (list2)
+
+
+list = [10, 20, 30, 40]
+list1 = [20, 40, 60, 80]
+list2 = []
+
+for i in list:
+  if i in list1:
+    list2.append(i)
+print(list2)
+
+
+
+
 
