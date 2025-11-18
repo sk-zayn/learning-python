@@ -40,13 +40,26 @@
 #     list2.append(i)
 # print(list2)
 
-list = [10, 20, 30, 40, 50]
-sum = 0
+# list = [10, 20, 30, 40, 50]
+# sum = 0
+
+# for i in list :
+#   sum = sum + i 
+# print(sum)
+
+# list = [10, 20, 30, 40, 50]
+# sum = 0
+
+# for i in list :
+#   sum = sum * i 
+# print(sum)
+
+list = [2, 3, 4, 4, 5]
+sum = 1
 
 for i in list :
-  sum = sum + i 
+  sum = sum * i 
 print(sum)
-
 
 
 
