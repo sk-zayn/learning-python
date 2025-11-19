@@ -11,3 +11,14 @@ for i in list1 :
   print (i)
 else :
   print ("list is over")
+
+
+list1 = ["zain", "zahid", "zainab", "parveen", "zaid"]
+for i in list1 :
+  if i == "zainab":
+    continue
+  print(i)
+else :
+  print ("Else part will get execute in continue statement")
+
+
