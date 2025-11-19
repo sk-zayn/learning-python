@@ -61,11 +61,8 @@
 #   sum = sum * i 
 # print(sum)
 
-num = int(input("Enter number here "))
-fact = 1
-for i in range(1, num+1) :
-  fact = fact * i 
-print(fact)
-
-
-
+# num = int(input("Enter number here "))
+# fact = 1
+# for i in range(1, num+1) :
+#   fact = fact * i 
+# print(fact)
