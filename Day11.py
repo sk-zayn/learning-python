@@ -30,8 +30,22 @@
 #   for j in i:
 #     print (j)
 
+# i = 1
+# while i<=5 :
+#   print(i)
+#   i = i+1
+
+# Infinite loop with break 
+i = 1
+while i>=0:
+  print(i)
+  if i == 10:
+    break
+  i = i+1
 
 i = 1
-while i<=5 :
+while True:
   print(i)
+  if i == 10:
+    break
   i = i+1
