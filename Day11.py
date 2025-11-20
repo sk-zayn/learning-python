@@ -35,17 +35,40 @@
 #   print(i)
 #   i = i+1
 
-# Infinite loop with break 
-i = 1
-while i>=0:
-  print(i)
-  if i == 10:
-    break
-  i = i+1
+# # Infinite loop with break 
+# i = 1
+# while i>=0:
+#   print(i)
+#   if i == 10:
+#     break
+#   i = i+1
 
-i = 1
+# i = 1
+# while True:
+#   print(i)
+#   if i == 10:
+#     break
+#   i = i+1
+4# num = 7
+# i = 1
+# while i <= 3:
+#   guess = int (input("Enter your guess "))
+#   if guess == num:
+#     print("You won")
+#     break
+#   i = i + 1
+# else:
+#   print("you lost")
+
+total = 0
+
 while True:
-  print(i)
-  if i == 10:
+  num = int(input("Enter a number here "))
+  if num < 0:
+    print("Its a negative number so we skipped it ")
+    continue
+  if num == 0:
     break
-  i = i+1
+  total = total + num
+
+print(total)
