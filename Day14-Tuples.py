@@ -13,3 +13,23 @@ print(tup3)
 
 print(tup3.count(5))
 print(tup3.index(5))
+
+a = 5
+b = 7
+
+# temp = a 
+# a = b
+# b = temp
+
+(a,b) = (b,a)
+print(a)
+print(b)
+
+#unpacking
+
+list3 = [12, 23, 34, 45, 56, 67,78, 89, 90]
+var1, var2, *var3, var4 = list3
+print(var1)
+print(var2)
+print(var3)
+print(var4)
