@@ -1,0 +1,10 @@
+{
+  "editor.minimap.showSlider": "mouseover",
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.preferredDarkColorTheme": "Dracula Theme",
+  "workbench.preferredLightColorTheme": "Dracula Theme",
+  "workbench.preferredHighContrastLightColorTheme": "Dracula Theme",
+  "workbench.preferredHighContrastColorTheme": "Dracula Theme",
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off"
+}
