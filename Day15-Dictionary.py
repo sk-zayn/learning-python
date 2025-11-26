@@ -56,6 +56,16 @@ default = None
 output = dict.fromkeys(keys, default)
 print(output)
 
+students = {
+  'name' : 'tausif',
+  'age' : 22
+}
+students.setdefault('surname', 'shaikh') #setdefaul will add the new pair of value in the dictionary
+print(students)
+
+students.setdefault('age', 25) # it cant update the existing value 
+print(students)
+
 cred = {
   'abc' :'abc123',
   'def' : 'def123',
@@ -94,3 +104,5 @@ elif menu.lower() == 'v':
       print(i)
 else:
   print('Enter v or k only ')
+
+
