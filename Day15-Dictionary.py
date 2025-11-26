@@ -72,3 +72,25 @@ for i, j in cred.items():
     break
 else:
   print('Login failed')
+
+
+student_data = {
+  'name' : 'zain',
+  'id' : 101,
+  'addr' : 'mumbai' 
+}
+menu = input('Enter v for value and k for keys ')
+
+if menu.lower() == 'k':
+  key = input('Enter key here ')
+  for i, j in student_data.items():
+    if i == key:
+      print(j)
+elif menu.lower() == 'v':
+  value = input('Enter the value here ')
+  for i, j in student_data.items():
+    k = str(j)
+    if value == k:
+      print(i)
+else:
+  print('Enter v or k only ')
