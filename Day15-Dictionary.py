@@ -55,3 +55,20 @@ default = None
 
 output = dict.fromkeys(keys, default)
 print(output)
+
+cred = {
+  'abc' :'abc123',
+  'def' : 'def123',
+  'ghi' : 'ghi123',
+  'jkl' : 'jkl123'
+}
+
+username = input('Enter your username ')
+password = input('Enter your password ')
+
+for i, j in cred.items():
+  if username == i and password ==j :
+    print('Login successful')
+    break
+else:
+  print('Login failed')
