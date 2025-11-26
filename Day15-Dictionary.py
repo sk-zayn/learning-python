@@ -49,3 +49,9 @@ print(dict_copy)
 
 dict_copy.clear() #this will clear out the whole dictionary
 print(dict_copy)
+
+keys = {'name', 'id', 'surname'} 
+default = None
+
+output = dict.fromkeys(keys, default)
+print(output)
