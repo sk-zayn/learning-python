@@ -22,3 +22,10 @@ height = int (input ('Enter the height here '))
 area_of_cuboid = 2 * (length*breadth + length*height + breadth*height)
 print(area_of_cuboid)
 
+
+n = int(input('Enter a number: '))
+fact = 1
+for i in range(1, n+1) :
+  fact = fact * i
+print(fact)
+
