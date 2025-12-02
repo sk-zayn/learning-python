@@ -58,4 +58,14 @@
 # for i, j in zip(list, list2):
 #   print(i, j)
 
+
+number = int(input('Enter number here: '))
+n1 = 0
+n2 = 1
+for i in range(1, number+1):
+  sum = n1 + n2
+  n1 = n2 
+  n2 = sum 
+print(sum)
+
   
