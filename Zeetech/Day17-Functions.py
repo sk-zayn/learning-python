@@ -10,8 +10,25 @@ def student_data (id, name, course, classes = 'zeetech'):
 
 student_data(1, 'zain', 'web dev') 
 
+
+#Xargs this will take only values in the arguments 
 def emp_data(*values):
   print(values)
   print(type(values))
 
 emp_data(101, 'zain', 'mumbra', 'student', 150000)
+
+#XXarge this will take key value pair in the arguments 
+def emp_data(**data):
+  print(data)
+
+emp_data(id= 101, name= 'zain', surname= 'shaikh', midname = 'zahid')
+
+
+#Return keyword is use to return final value from defining part to calling part
+def add(a, b):
+  c = a + b
+  return c
+
+print(add(10, 20))
+print(add(40, 60))
