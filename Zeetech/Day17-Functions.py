@@ -43,4 +43,14 @@ def is_palindrome (name):
 print(is_palindrome('zain'))
 print(is_palindrome('madam'))
 print(is_palindrome('mom'))
+
+def factorial(num):
+  fact = 1
+  for i in range(1, num+1):
+    fact = fact * i
+  return(fact)
+
+print(factorial(5))
+print(factorial(4))
+  
   
