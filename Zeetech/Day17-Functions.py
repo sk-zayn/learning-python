@@ -32,3 +32,15 @@ def add(a, b):
 
 print(add(10, 20))
 print(add(40, 60))
+
+def is_palindrome (name):
+  reverse = name[::-1]
+  if name == reverse:
+    return f'{name} is a palindrome'
+  else:
+    return f'{name} is not a palindrome'
+  
+print(is_palindrome('zain'))
+print(is_palindrome('madam'))
+print(is_palindrome('mom'))
+  
