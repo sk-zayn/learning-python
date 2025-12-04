@@ -19,11 +19,13 @@
 #   print(i, j)
 
 # # zip
-# it needs 2 or more list to work it will join the index value of both like 1:1 and return it and do the same for rest
+# it needs 2 or more list to work it will join the index value of both like 1:1 and return it and do the same for rest it returns us the data type value like if you put string it will return string and if you put int it will return int 
+#if you want to convert it into some data type you dont have to use for loop 
 
-# student = ['zain', 'zahid', 'zainab', 'zaid', 'parveen']
-# born = ['2nd born', 'father', '3rd born', '1st born', 'mother']
-
+student = ['zain', 'zahid', 'zainab', 'zaid', 'parveen']
+born = ['2nd born', 'father', '3rd born', '1st born', 'mother']
+both = dict(zip(student, born))
+print(both)
 # for i, j in zip(student,born):
 #   print(i, j)
 
