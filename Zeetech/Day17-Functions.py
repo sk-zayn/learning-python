@@ -18,7 +18,7 @@ def emp_data(*values):
 
 emp_data(101, 'zain', 'mumbra', 'student', 150000)
 
-#XXarge this will take key value pair in the arguments 
+#XXarge this will take key value pair in the arguments returns dictionary. 
 def emp_data(**data):
   print(data)
 
