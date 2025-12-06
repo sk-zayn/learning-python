@@ -5,8 +5,8 @@ def prime_number (num):
       break
   else:
     print(f'{num} is a prime number')
-
 prime_number(11)
+
 
 def is_perfect (num):
   sum = 0
@@ -17,8 +17,8 @@ def is_perfect (num):
     return f'{num} is a perfect number'
   else:
     return f'{num} is not a perfect number'
-  
 print (is_perfect(20))
+
 
 def greatest_number (num):
   max = num[0]
@@ -36,13 +36,22 @@ def great_num (num):
   for i in num:
     for j in i:
       if j > max:
-        max = j 
+        max = j
   return max
 
+
 def great_num(num):
-    return max(max(inner) for inner in num) #chat gpt version
+  return max(max(inner) for inner in num) #chat gpt version
 
 print(great_num([[1, 3, 5], [87, 23, 6], [12, 67, 8]]))
-  
 
-      
+
+
+
+
+
+
+
+
+
+
