@@ -34,4 +34,15 @@ dict2 = {x: x**2 for x in range(1, 6)}
 print(type(dict2))
 print(dict2)
 
+# to make a dictionary using zip you can create iterables inside the zip function
+# and create outside and pass it in the zip function also
+dict3 = {x : y for x, y in zip([1, 2, 3, 4], ['zain', 'zaid', 'zainab', 'zahid'])}
+print(dict3)
+
+#enumerate function give 2 values 1 index and 2 value
+name = 'zain'
+dict4 = {x : y for x, y in enumerate(name)}
+print(dict4)
+
+
 
