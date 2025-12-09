@@ -44,5 +44,28 @@ name = 'zain'
 dict4 = {x : y for x, y in enumerate(name)}
 print(dict4)
 
+dict1 = {"101":'zain', 102: 'zaid', 103: 'zainab'}
+print(dict1.keys()) #returns list of keys
+print(dict1.values()) #returns list of values
+print(dict1.items()) #returns list of key value pair encoded in tuple
+
+for k in dict1.keys(): #to iterate over keys of the dictionary
+  print(k)
+
+for v in dict1.values(): #to iterate over values of the dictionary
+  print(v)
+
+for k, v in dict1.items(): #taking 2 variable 1 to iterate on the keys and another one to iterate over  value
+  print(k, v)
+
+
+
+s1 = {1, 2, 3, 4, 5}
+s2 = {'zain', 'zaid', 'zainab', 'zahid', 'parveen'}
+dict0 = {x : y for x, y in zip(s1,s2)}
+print(dict0)
+
+
+
 
 
