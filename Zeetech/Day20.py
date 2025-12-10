@@ -74,4 +74,13 @@ def is_age_criteria(age):
 is_age_criteria(12)
 is_age_criteria(25)
 
+def salary(salary):
+  try:
+    if salary < 5000 or salary > 15000:
+      raise ValueError('We dont pay below 5k and above 15k ')
+  except ValueError as f:
+    print(f)
+  else:
+    print('Accepted')
+
 
