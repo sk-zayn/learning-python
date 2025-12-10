@@ -30,3 +30,27 @@ except ValueError:
 else:
   print('No exception found')
 
+
+try:
+  age = int(input('Enter your age: '))
+  income = 50000
+  risk = income / age
+  print(age)
+  print(risk)
+except ZeroDivisionError:
+  print('Age cannot be 0')
+except ValueError:
+  print('Age cannot be characters ')
+else:
+  print('No exception found')
+
+try:
+  with open ('file.txt', 'r')as file: #using with open the file will be closed automatically we dont need to do it manually with finally ()
+    file_content1 = file.read() #print the whole file at once
+    file_content = file.readline() #print one line at a time
+    file_content2 = file.readlines() #print all the line in the form of list and /n for next line
+    print(file_content)
+except FileNotFoundError:
+  print('File does not exist')
+else:
+  print('File exists')
