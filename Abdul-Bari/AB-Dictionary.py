@@ -63,7 +63,37 @@ for k, v in dict1.items(): #taking 2 variable 1 to iterate on the keys and anoth
 s1 = {1, 2, 3, 4, 5}
 s2 = {'zain', 'zaid', 'zainab', 'zahid', 'parveen'}
 dict0 = {x : y for x, y in zip(s1,s2)}
-print(dict0)
+print(id(dict0[5]))
+
+dict9 = {
+  'sachin' :' 12/8/2012',
+  'arhan' : '13/2/1998',
+  'zain' : '12/9/2003',
+  'zainab' :'21/8/2006',
+  'zaid' :' 4/5/2002'
+}
+name = input('Enter your name: ')
+for i in dict9.keys():
+  if i == name:
+    print(dict9[i])
+    break
+
+data = {
+    "introduction": "My name is Zayn and I love learning new things.",
+    "daily_routine": "I usually start my day around 11:30 AM.",
+    "hobby": "I enjoy playing football in the evenings.",
+    "goal": "I want to become a software engineer in the future.",
+    "pet_story": "I have two adorable cats named Max and FiFi who keep me active.",
+    "travel_dream": "One day, I hope to visit Japan and explore its culture.",
+    "study_plan": "Right now, I am learning Python and preparing to switch to Java for DSA."
+}
+dataKeys = data.keys()
+dataValues = data.values()
+
+print(max(dataKeys, key=len))
+print(max(dataValues, key=len))
+
+
 
 
 
