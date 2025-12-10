@@ -1,16 +1,16 @@
-import json
-import sqlite3
-import getpass
+# import json
+# import sqlite3
+# import getpass
 
-emailId = input('Enter email-id here: ')
-userName = emailId.split('@')[0]
-password = input('Enter password here: ')
+# emailId = input('Enter email-id here: ')
+# userName = emailId.split('@')[0]
+# password = input('Enter password here: ')
 
-conn = sqlite3.connect('db.sqlite3')
-query = 'insert into Register values (?,?,?)'
-conn.execute(query, [emailId, userName, password])
-conn.commit()
-print('Data has been inserted successfully')
+# conn = sqlite3.connect('db.sqlite3')
+# query = 'insert into Register values (?,?,?)'
+# conn.execute(query, [emailId, userName, password])
+# conn.commit()
+# print('Data has been inserted successfully')
 
 
 #Exception Handling
@@ -54,3 +54,11 @@ except FileNotFoundError:
   print('File does not exist')
 else:
   print('File exists')
+
+with open('file2.txt', 'w') as file: #write function creates a new file and add the content in it
+  file.write('I am a python developer ') #if we try to add another content after running the file it will override the content added before
+# to add the text in the previous file we use append method instead of write
+
+with open('file2.txt', 'a') as file:
+  file.write('I am a python developer ')
+
