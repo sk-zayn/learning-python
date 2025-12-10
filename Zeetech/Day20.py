@@ -22,27 +22,27 @@
 #finally block : you will be quiting a session or else closing a file
 
 
-try:
-  age = int(input('Enter your age: '))
-  print(age)
-except ValueError:
-  print('Age cannot be characters ')
-else:
-  print('No exception found')
+# try:
+#   age = int(input('Enter your age: '))
+#   print(age)
+# except ValueError:
+#   print('Age cannot be characters ')
+# else:
+#   print('No exception found')
 
 
-try:
-  age = int(input('Enter your age: '))
-  income = 50000
-  risk = income / age
-  print(age)
-  print(risk)
-except ZeroDivisionError:
-  print('Age cannot be 0')
-except ValueError:
-  print('Age cannot be characters ')
-else:
-  print('No exception found')
+# try:
+#   age = int(input('Enter your age: '))
+#   income = 50000
+#   risk = income / age
+#   print(age)
+#   print(risk)
+# except ZeroDivisionError:
+#   print('Age cannot be 0')
+# except ValueError:
+#   print('Age cannot be characters ')
+# else:
+#   print('No exception found')
 
 try:
   with open ('file.txt', 'r')as file: #using with open the file will be closed automatically we dont need to do it manually with finally ()
@@ -61,4 +61,17 @@ with open('file2.txt', 'w') as file: #write function creates a new file and add 
 
 with open('file2.txt', 'a') as file:
   file.write('I am a python developer ')
+
+def is_age_criteria(age):
+  try:
+    if age < 18:
+      raise ValueError('We dont hire minors')
+  except ValueError as e :
+    print(e)
+  else:
+    print('You are welcome here')
+
+is_age_criteria(12)
+is_age_criteria(25)
+
 
