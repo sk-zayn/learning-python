@@ -31,7 +31,18 @@ elif num3 == '-':
 elif num3 == '/':
   print(num1 / num2)
 
+celciusOrFerenhite = input ('For celcius write c for ferenhite write f')
 
+if celciusOrFerenhite.lower() == 'c':
+  temperature = float(input('Enter you temperature: '))
+  tempconvert = temperature * 1.8 + 32
+  print(tempconvert)
+elif celciusOrFerenhite.lower() == 'f':
+  temperature = float(input('Enter you temperature: '))
+  tempconvert = (temperature - 32) / 1.8
+  print(tempconvert)
+else:
+  print('You have to enter c  or f ')
 
 
 
