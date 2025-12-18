@@ -7,3 +7,55 @@ class employee :
 
 emp1 = employee("John", 30, 50000)
 emp2 = employee("Alice", 28, 60000)
+
+
+
+# inheritence
+# it means child class will have parent calss feature as well as it own features
+# inheritence supports code reusability
+
+class Rehman:
+  def polite(self):
+    print('he is a polite person')
+
+class ayaz (Rehman): # passing class in another class make the class in which the other class is pass child class
+  def graduate (self):
+    print('Yes he is graduate')
+
+obj1 = ayaz()
+obj1.graduate()
+obj1.polite()
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+class Student(Person):
+  def __init__(self, name, age, roll_no, course):
+    self.roll_no = roll_no
+    self.course = course
+    super().__init__(name, age)
+    print(self.name, self.age, self.roll_no, self.course)
+
+obj2 = Student('zain', 22, 1, 'web development')
+
+class teamLeader:
+  def __init__(self, name, exp):
+    self.name = name
+    self.exp = exp
+
+class teamMembers:
+  def __init__(self, sal, designation):
+    self.sal = sal
+    self.designation = designation
+
+class Worker(teamLeader, teamMembers):
+  def __init__(self, name, exp, sal, designation, address):
+    teamLeader.__init__(self, name, exp)
+    teamMembers.__init__(self, sal, designation)
+    self.address = address
+    print(self.name, self.exp, self.sal, self.designation, self.address)
+
+
+obj4 = Worker('zain', 2, 20000, 'developer', 'mumbra')
