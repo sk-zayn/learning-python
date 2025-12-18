@@ -3,15 +3,15 @@
 # while i <= 10 :
 #   print(f"{num} x {i} = {num * i}")
 #   i = i + 1
-  
+
 # n = int (input('Enter a number '))
 # for i in range(1, 11):
 #   print(f'{n} x {i} = {n*i}')
 
-# f = 0 
+# f = 0
 # print (bool(f))
 
-# a = 15 
+# a = 15
 # b = 2
 # print(a//b)
 
@@ -23,11 +23,11 @@
 # print(area_of_cuboid)
 
 
-# n = int(input('Enter a number: '))
-# fact = 1
-# for i in range(1, n+1) :
-#   fact = fact * i
-# print(fact)
+n = int(input('Enter a number: '))
+fact = 1
+for i in range(1, n+1) :
+  fact = fact * i
+print(fact)
 
 for n in range (1, 100+1):
   count = 0
@@ -36,4 +36,18 @@ for n in range (1, 100+1):
       count += 1
   if count == 2:
     print(n)
+
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print(fact)
+
+for n in range(1, 101):
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count += 1
+    if count == 2:
+        print(n)
 

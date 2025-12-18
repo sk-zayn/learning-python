@@ -96,75 +96,75 @@
 
 # take input of counry name from the user and print it in a dictionary alphabetically
 
-# countries = {}
-# for i in range(5):
-#   name = input('Enter a country name here: ')
-#   if name[0].upper() not in countries:
-#     countries[name[0].upper()] = [name]
-#   else:
-#     countries[name[0].upper()].append(name)
-
-# print(countries)
-
-romanNumbers = {
-  'I' : 1,
-  'V' : 5,
-  'X' : 10,
-  'L' : 50,
-  'C' : 100,
-  'D' : 500,
-  'M' : 1000
-}
-
-s1 = 'CDXLIV'
-total = 0
-
-for i in range(len(s1)):
-  value = romanNumbers[s1[i]]
-
-    # If next value exists and is bigger → subtract
-  if i + 1 < len(s1) and romanNumbers[s1[i+1]] > value:
-    total -= value
+countries = {}
+for i in range(5):
+  name = input('Enter a country name here: ')
+  if name[0].upper() not in countries:
+    countries[name[0].upper()] = [name]
   else:
-    total += value
+    countries[name[0].upper()].append(name)
 
-print(total)
+print(countries)
+
+# romanNumbers = {
+#   'I' : 1,
+#   'V' : 5,
+#   'X' : 10,
+#   'L' : 50,
+#   'C' : 100,
+#   'D' : 500,
+#   'M' : 1000
+# }
+
+# s1 = 'CDXLIV'
+# total = 0
+
+# for i in range(len(s1)):
+#   value = romanNumbers[s1[i]]
+
+#     # If next value exists and is bigger → subtract
+#   if i + 1 < len(s1) and romanNumbers[s1[i+1]] > value:
+#     total -= value
+#   else:
+#     total += value
+
+# print(total)
 
 
 
-name = input('Enter your name: ')
-rollNo = int(input('Enter your roll no: '))
-departmentName = input('Enter your department name: ')
+# name = input('Enter your name: ')
+# rollNo = int(input('Enter your roll no: '))
+# departmentName = input('Enter your department name: ')
 
-students = {}
-if name not in students:
-  pair = {
-    'name' : name,
-    'rollno' : rollNo,
-    'Deparment' : departmentName
-  }
-  students.setdefault(name, pair)
+# students = {}
+# if name not in students:
+#   pair = {
+#     'name' : name,
+#     'rollno' : rollNo,
+#     'Deparment' : departmentName
+#   }
+#   students.setdefault(name, pair)
 
-print(students)
+# print(students)
 
 
-students = {}
+# students = {}
 
-while True:
-    name = input('Enter your name: ')
-    rollNo = int(input('Enter your roll no: '))
-    departmentName = input('Enter your department name: ')
+# while True:
+#     name = input('Enter your name: ')
+#     rollNo = int(input('Enter your roll no: '))
+#     departmentName = input('Enter your department name: ')
 
-    students[name] = {
-        'name': name,
-        'roll no': rollNo,
-        'Department': departmentName
-    }
+#     students[name] = {
+#         'name': name,
+#         'roll no': rollNo,
+#         'Department': departmentName
+#     }
 
-    more = input("Add more students? (yes/no): ").lower()
-    if more != "yes":
-        break
+#     more = input("Add more students? (yes/no): ").lower()
+#     if more != "yes":
+#         break
 
-print(students)
-
+# print(students)
+print('hi')
 

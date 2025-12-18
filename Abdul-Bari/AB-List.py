@@ -11,7 +11,7 @@
 # list1 * 4
 # print(list1)
 
-# for i in range( len(list1)): # to print indexes of the list 
+# for i in range( len(list1)): # to print indexes of the list
 #   print(i)
 
 # list1.insert(45, 2)
@@ -44,9 +44,9 @@
 #     s.append(l1[i][j] + l2[i][j])
 #   l3.append(s)
 # print(l3)
-    
+
 # work_hour =[int(x) for x in input('Enter number of hours you worked in a week seperated by space: ').split()]
-# print(work_hour) 
+# print(work_hour)
 # per_hour_pay = int(input('Enter per hour pay: '))
 # total_time = 0
 # for i in work_hour:
@@ -85,18 +85,18 @@
 
 # print(int(number))
 
-# fav1 = ['pizza', 'nuggets', 'hotdog', 'noodles', 'pasta', 'burger']
-# fav2 = ['burger', 'hotdog', 'noodles', 'pasta', 'nuggets', 'pizza']
-# index1 = 10
-# index2 = 10
-# for i in range(len(fav1)):
-#   indx = fav2.index(fav1[i])
+fav1 = ['pizza', 'nuggets', 'hotdog', 'noodles', 'pasta', 'burger']
+fav2 = ['burger', 'hotdog', 'noodles', 'pasta', 'nuggets', 'pizza']
+index1 = 10
+index2 = 10
+for i in range(len(fav1)):
+  indx = fav2.index(fav1[i])
 
-#   if (i + indx) < (index1 + index2):
-#     index1 = i 
-#     index2 = indx
-  
-# print(fav1[index1], index1 + index2)
+  if (i + indx) < (index1 + index2):
+    index1 = i
+    index2 = indx
+
+print(fav1[index1], index1 + index2)
 
 
 # l1 = [6, 7, 9, 10, 4, 3, 5]
@@ -123,24 +123,24 @@
 # print(l4)
 
 
-# l1 = [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
-# l2 = [] 
-# for i in range(4):
-#   s = []
-#   for j in range(3):
-#     s.append(l1[j][i])
-#   l2.append(s)
+l1 = [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
+l2 = []
+for i in range(4):
+  s = []
+  for j in range(3):
+    s.append(l1[j][i])
+  l2.append(s)
 
-# print(l2)
+print(l2)
 
-# fav1 = ['pizza', 'nuggets', 'hotdog', 'noodles', 'pasta', 'burger']
-# char = input('Enter the first character of the food: ').lower()
-# [print(i) for i in fav1 if i[0] == char]
+fav1 = ['pizza', 'nuggets', 'hotdog', 'noodles', 'pasta', 'burger']
+char = input('Enter the first character of the food: ').lower()
+[print(i) for i in fav1 if i[0] == char]
 
-# t1 = 10, 'zain', 40+2j, True, 40.8
-# print(type(t1), t1)
-# a, b, c = t1
-# print(a, b, c)
+t1 = 10, 'zain', 40+2j, True, 40.8
+print(type(t1), t1)
+a, b, c = t1
+print(a, b, c)
 
 nums = [4, 7, 1, 3, 9]
 x = sum(nums)
