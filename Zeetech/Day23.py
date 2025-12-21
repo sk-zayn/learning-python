@@ -59,3 +59,25 @@ class Worker(teamLeader, teamMembers):
 
 
 obj4 = Worker('zain', 2, 20000, 'developer', 'mumbra')
+
+
+l1 = [1, 2, 3, 4, 5]
+sum = 0
+for i in l1:
+  sum += i
+
+print(sum)
+
+
+str = 'String'
+print(str[::-1])
+
+
+dictionary = {
+  'name' : 'zain',
+  'age' : 22,
+  'address' : 'mumbra'
+}
+
+for i, j in dictionary.items():
+  print(i, j)
