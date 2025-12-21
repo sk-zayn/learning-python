@@ -81,3 +81,16 @@ dictionary = {
 
 for i, j in dictionary.items():
   print(i, j)
+
+strinput = input('Enter a string here: ')
+char = {}
+
+for i in strinput:
+    if i != ' ':
+        if i not in char:
+            char[i] = 1
+        else:
+            char[i] += 1
+
+print(char)
+
