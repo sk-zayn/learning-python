@@ -94,3 +94,24 @@ for i in strinput:
 
 print(char)
 
+
+l12 = [12, 43, 56, 32, 23, 79, 43, 21]
+greatest = l12[0]
+for i in l12:
+  if i > greatest:
+    greatest = i
+
+print(greatest)
+
+l15 = [-2, 5, 0, -1, 8, 3]
+negative = 0
+positive = 0
+
+for i in l15:
+  if i < 0:
+    negative += 1
+  else:
+    positive += 1
+
+print(positive)
+print(negative)
