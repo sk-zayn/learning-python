@@ -31,3 +31,51 @@ c = Circle(8)
 print(c.area())
 print(c.parameter())
 print(math.pi)
+
+
+class Book:
+  def __init__(self, title, author, price):
+    self.title = title
+    self.author = author
+    self.price = price
+
+  def show_details(self):
+    print('Title:', self.title)
+    print('Author:', self.author)
+    print('Price:', self.price)
+
+
+b = Book('The Alchemist', 'Paulo Coelho', 1200)
+
+b.show_details()
+
+
+class Employee:
+  emp_count = 101
+  def __init__(self, name, designation, salary):
+    self.name = name
+    self.designation = designation
+    self.salary = salary
+    self.eid = 'e' + str(Employee.emp_count)
+    Employee.emp_count += 1
+
+  def show_details(self):
+    print('Name :', self.name)
+    print('Eid :', self.eid)
+    print('Designation :', self.designation)
+    print('Salary :', self.salary)
+    print('')
+
+  @classmethod
+  def total_emp_count(cls):
+    print(cls.emp_count - 101)
+
+e1 = Employee('zaid', 'developer', 80000)
+e2 = Employee('zain', 'engineer', 50000)
+e3 = Employee('zainab', 'ui-ux', 30000)
+
+e1.show_details()
+e2.show_details()
+e3.show_details()
+
+print(e1.total_emp_count())
