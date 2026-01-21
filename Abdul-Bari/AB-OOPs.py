@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 class Cuboid:
   def __init__(self, length, breadth, height):
     self.l = length
@@ -95,3 +97,21 @@ sum = r1 + r2
 print(sum.p, sum.q)
 
 
+#This is an abstract class cause we use ABC as a parameter
+class parent(ABC):
+  @abstractmethod
+  #this is an abstract method cause there is no content in the function that means we have to 
+  def show (self):
+    pass
+
+  def display (self):
+    print('Parent class display')
+
+class child(parent):
+  def show(self):
+    print('Child class show')
+
+c = child()
+
+c.show()
+c.display()
