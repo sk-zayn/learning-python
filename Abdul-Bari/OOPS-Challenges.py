@@ -1,5 +1,6 @@
 from random import *
 import math
+#Question 1
 class Dice:
   def __init__(self, sides = 6):
     self.sides = sides
@@ -13,6 +14,7 @@ print(d.roll_dice())
 print(d.roll_dice())
 
 
+#Question 2
 class Circle:
   def __init__(self, radius):
     self.radius = radius
@@ -33,6 +35,7 @@ print(c.parameter())
 print(math.pi)
 
 
+#Question 3
 class Book:
   def __init__(self, title, author, price):
     self.title = title
@@ -50,6 +53,7 @@ b = Book('The Alchemist', 'Paulo Coelho', 1200)
 b.show_details()
 
 
+#Question 4
 class Employee:
   emp_count = 101
   def __init__(self, name, designation, salary):
@@ -81,6 +85,7 @@ e3.show_details()
 print(e1.total_emp_count())
 
 
+#Question 5
 class Calculator:
   @staticmethod
   def add (a, b):
@@ -104,3 +109,29 @@ y = 3
 print(Calculator.add(x, y))
 print(Calculator.sub(x, y))
 print(Calculator.mul(x, y))
+
+
+#Question 6
+class Customer:
+  def __init__(self, name, phone):
+    self.name = name
+    self.phone = phone
+
+  def get_name (self):
+    return self.name
+
+  def get_phone (self):
+    return self.phone
+
+  def set_phone (self, phone):
+    self.phone = phone
+
+c = Customer('zaid', '9876543210')
+print(c.get_name())
+print(c.get_phone())
+
+c.set_phone('1234567890')
+print('')
+print(c.get_name())
+print(c.get_phone())
+
