@@ -1,6 +1,6 @@
 from threading import *
 from time import *
-
+from queue import *
 # def display():
 #   for i in range(65, 91):
 #     print(chr(i))
@@ -56,7 +56,7 @@ from time import *
 
 
 
-# #This is a normal method to write this code using lock and flag
+# #1. This is a normal method to write this code using lock and flag
 # class Mydata:
 #   def __init__(self):
 #     self.data = 0
@@ -106,46 +106,76 @@ from time import *
 # t2.join()
 
 
-#in this case we are going to use condition
-class Mydata:
-  def __init__(self):
-    self.data = 0
-    self.cv = Condition()
+# #2. in this case we are going to use condition
+# class Mydata:
+#   def __init__(self):
+#     self.data = 0
+#     self.cv = Condition()
 
-  def put(self, d):
-    self.cv.acquire()
-    self.cv.wait(timeout=0)
-    self.data = d
-    self.cv.notify()
-    self.cv.release()
+#   def put(self, d):
+#     self.cv.acquire()
+#     self.cv.wait(timeout=0)
+#     self.data = d
+#     self.cv.notify()
+#     self.cv.release()
 
-  def get(self):
-    self.cv.acquire()
-    self.cv.wait(timeout=0)
-    x = self.data
-    self.cv.notify()
-    self.cv.release()
-    return x
+#   def get(self):
+#     self.cv.acquire()
+#     self.cv.wait(timeout=0)
+#     x = self.data
+#     self.cv.notify()
+#     self.cv.release()
+#     return x
 
 
-def producer(data):
+# def producer(data):
+#   i = 1
+#   while True:
+#     data.put(i)
+#     print ('Producer:', i)
+#     sleep(1)
+#     i += 1
+
+# def consumer(data):
+#   while True:
+#     x = data.get()
+#     print ('Consumer:', x)
+#     sleep(1)
+
+# data = Mydata()
+# t1 = Thread(target= lambda:producer(data))
+# t2 = Thread(target= lambda:consumer(data))
+
+# t1.start()
+# t2.start()
+
+
+# t1.join()
+# t2.join()
+
+
+#3. IN THIS CASE WE ARE GOING TO USE QUEUE TO WRITE THE SAME CODE
+
+q = Queue()
+
+
+
+def producer(que):
   i = 1
   while True:
-    data.put(i)
+    que.put(i)
     print ('Producer:', i)
     sleep(1)
     i += 1
 
-def consumer(data):
+def consumer(que):
   while True:
-    x = data.get()
+    x = que.get()
     print ('Consumer:', x)
     sleep(1)
 
-data = Mydata()
-
-t1 = Thread(target= lambda:producer(data))
-t2 = Thread(target= lambda:consumer(data))
+t1 = Thread(target= lambda:producer(q))
+t2 = Thread(target= lambda:consumer(q))
 
 t1.start()
 t2.start()
@@ -153,6 +183,3 @@ t2.start()
 
 t1.join()
 t2.join()
-
-
-
